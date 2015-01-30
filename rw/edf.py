@@ -1,5 +1,3 @@
-from __future__ import division  # py2
-
 from datetime import datetime
 from struct import pack
 
@@ -32,8 +30,7 @@ class ExportEdf():
         subj_info = 'X X X X'
         recording_info = ('Startdate ' +
                            start_time.strftime('%d-%b-%Y') +
-                           ' X X ' +
-                           (args.dev + '/ai' + args.analoginput))
+                           ' X X test')
 
         self.s_freq = s_freq
         self.filename = args.edf
